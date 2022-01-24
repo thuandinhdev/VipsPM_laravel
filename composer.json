@@ -65,7 +65,8 @@
     "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
         ],
         "post-install-cmd": [
             "php artisan clear-compiled",
