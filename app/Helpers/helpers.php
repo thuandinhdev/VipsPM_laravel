@@ -57,7 +57,7 @@ if ( ! function_exists('getConfigs'))
                     'JSON',
                     'cURL',
                     'mysqli',
-                    'gd',
+                    // 'gd',
                     // 'zip',
                 ],
                 'apache' => [
