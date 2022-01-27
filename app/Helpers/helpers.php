@@ -75,13 +75,13 @@ if ( ! function_exists('getConfigs'))
             |
             */
             'permissions' => [
-                'bootstrap/cache/'       => '777',
-                'public/uploads/'        => '777',
-                'storage/app/'           => '777',
-                'storage/framework/'     => '777',
-                'storage/logs/'          => '777',
-                'install.sql'            => '666',
-                '.env'                   => '666'
+                // 'bootstrap/cache/'       => '777',
+                // 'public/uploads/'        => '777',
+                // 'storage/app/'           => '777',
+                // 'storage/framework/'     => '777',
+                // 'storage/logs/'          => '777',
+                // 'install.sql'            => '666',
+                // '.env'                   => '666'
             ],
 
             /*
