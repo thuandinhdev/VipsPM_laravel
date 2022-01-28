@@ -18,13 +18,13 @@
         "nwidart/laravel-modules": "^4.0",
         "spatie/laravel-responsecache": "^6.0",
         "stripe/stripe-php": "^7.66",
+        "fzaninotto/faker": "^1.6",
         "tymon/jwt-auth": "1.0.0-rc.4"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
         "filp/whoops": "^2.0",
         "mockery/mockery": "^1.0",
-        "fzaninotto/faker": "^1.6",
         "nunomaduro/collision": "^2.0",
         "phpunit/phpunit": "^7.0"
     },
