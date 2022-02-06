@@ -15,7 +15,7 @@ use Illuminate\Http\Request;
 Route::get('settings/get-settings', 'SettingController@getSettings');
 // Route::get('settings/changeApiUrl', 'SettingController@changeApiUrl');
 Route::group(
-    ['middleware' => 'auth:api'],
+    // ['middleware' => 'auth:api'],
     function () {
     	Route::get('settings/sent-test-email', 'SettingController@sendTestEmail');
         Route::resource('settings','SettingController',['except' => ['edit', 'update', 'destroy']]);
