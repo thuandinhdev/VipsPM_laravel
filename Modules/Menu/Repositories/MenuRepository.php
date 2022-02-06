@@ -171,7 +171,6 @@ class MenuRepository
 
         // --
         // Get departments/roles
-        var_dump(Auth::user());
         if (!empty(\Auth::user())) {
             $roles = \Auth::user()->roles()->get()->pluck('id');
             $departments = \Auth::user()->departments()->get()->pluck('id');
