@@ -15,7 +15,7 @@ use Illuminate\Http\Request;
 
 Route::group(
     [
-    'middleware' => 'auth:api'
+    // 'middleware' => 'auth:api'
     ],
     function () {
         Route::get('sidebar-menu', 'MenuController@getSidebarMenu');
