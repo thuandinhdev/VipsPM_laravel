@@ -8072,7 +8072,7 @@ var LoginComponent = /** @class */ (function () {
         this.authenticationService.login(this.userControl.email.value, this.userControl.password.value)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["first"])())
             .subscribe(function (data) {
-            _this.router.navigate(['dashboard']);
+//             _this.router.navigate(['dashboard']);
         });
     };
     LoginComponent.prototype.instantLogin = function (email, password) {
