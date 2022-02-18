@@ -7328,6 +7328,7 @@ var AuthenticationService = /** @class */ (function () {
         configurable: true
     });
     AuthenticationService.prototype.setLoginUser = function (user) {
+        console.log(user);
         localStorage.setItem('loginUser', JSON.stringify(user));
         this.setUserPermissions(user);
         this.currentUserSubject.next(user);
