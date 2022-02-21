@@ -192,7 +192,6 @@ class AuthController extends Controller
 						$user->last_login = date('Y-m-d H:i:s');
 						$user->online_status = true;
 						$user->save();
-                        dd($user);
 						return $this->respondWithToken($token);
 					} else {
 						return response()->json(['error' => trans('validation.custom.messages.invalid_login')], 400);
@@ -329,7 +328,7 @@ class AuthController extends Controller
 			[
 			'token' => $token,
 			'token_type' => 'bearer',
-			'expires_in' => auth()->factory()->getTTL() * 90
+			'expires_in' => auth()->factory()->getTTL() * 9000
 			]
 		);
 	}
