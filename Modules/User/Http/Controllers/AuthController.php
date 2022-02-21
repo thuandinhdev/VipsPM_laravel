@@ -192,6 +192,7 @@ class AuthController extends Controller
 						$user->last_login = date('Y-m-d H:i:s');
 						$user->online_status = true;
 						$user->save();
+                        dd(Auth::user());
 						return $this->respondWithToken($token);
 					} else {
 						return response()->json(['error' => trans('validation.custom.messages.invalid_login')], 400);
