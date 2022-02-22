@@ -187,11 +187,11 @@ class AuthController extends Controller
 					if (Auth::attempt($credentials)) {
 						// --
 						// Save user
-						$user = Auth::user();
-						$user->last_ip = $request->ip();
-						$user->last_login = date('Y-m-d H:i:s');
-						$user->online_status = true;
-						$user->save();
+// 						$user = Auth::user();
+// 						$user->last_ip = $request->ip();
+// 						$user->last_login = date('Y-m-d H:i:s');
+// 						$user->online_status = true;
+// 						$user->save();
 						return $this->respondWithToken($token);
 					} else {
 						return response()->json(['error' => trans('validation.custom.messages.invalid_login')], 400);
