@@ -74,6 +74,7 @@
             "chmod -R 777 'public/uploads/'",
             "chmod -R 777 'storage/'",
             "chmod -R 777 'storage/framework/'",
+            "chmod -R 777 'storage/framework/sessions/'",
             "chmod -R 777 'storage/logs/'",
             "chmod -R 777 'storage/app/'",
             "chmod -R 777 'bootstrap/cache/'",
