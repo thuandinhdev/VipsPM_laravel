@@ -17,6 +17,7 @@
         "nicolaslopezj/searchable": "1.*",
         "nwidart/laravel-modules": "^4.0",
         "spatie/laravel-responsecache": "^6.0",
+        "ext-memcached": "*",
         "stripe/stripe-php": "^7.66",
         "tymon/jwt-auth": "1.0.0-rc.4"
     },
