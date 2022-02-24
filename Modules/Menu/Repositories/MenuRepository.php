@@ -169,7 +169,6 @@ class MenuRepository
         $menus = [];
         $menuItems = [];
         // --
-        dd(\Auth::user());
         // Get departments/roles
         if (!empty(\Auth::user())) {
             $roles = \Auth::user()->roles()->get()->pluck('id');
