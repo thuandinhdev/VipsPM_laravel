@@ -137,6 +137,7 @@ class AuthController extends Controller
 	 */
 	public function login(LoginUserRequest $request)
 	{
+        dd(env('APP_URL'));
 		// --
 		// Credentials
 		$credentials = $this->credentials($request);
